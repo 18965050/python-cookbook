@@ -2,6 +2,11 @@
 #
 # Unpacking of tagged tuples of varying sizes
 
+p=(4,5,6)
+x,y,z,*a=p
+print(x)
+print(a)
+
 records = [
      ('foo', 1, 2),
      ('bar', 'hello'),

@@ -2,6 +2,7 @@
 #
 # Example of calculating with dictionaries
 
+
 prices = {
    'ACME': 45.23,
    'AAPL': 612.78,
