@@ -36,21 +36,22 @@ class SubPerson(Person):
         print('Deleting name')
         super(SubPerson, SubPerson).name.__delete__(self)
 
-class SubPerson2(Person):
-    @Person.name.setter
-    def name(self, value):
-        print('Setting name to', value)
-        super(SubPerson2, SubPerson2).name.__set__(self, value)
-
-class SubPerson3(Person):
-    #@property
-    @Person.name.getter
-    def name(self):
-        print('Getting name')
-        return super().name
+# class SubPerson2(Person):
+#     @Person.name.setter
+#     def name(self, value):
+#         print('Setting name to', value)
+#         super(SubPerson2, SubPerson2).name.__set__(self, value)
+#
+# class SubPerson3(Person):
+#     #@property
+#     @Person.name.getter
+#     def name(self):
+#         print('Getting name')
+#         return super().name
 
 if __name__ == '__main__':
-   a = Person('Guido')
+   # a = Person('Guido')
+   a=SubPerson("Guido")
    print(a.name)
    a.name = 'Dave'
    print(a.name)

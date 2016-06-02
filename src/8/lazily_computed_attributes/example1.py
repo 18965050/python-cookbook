@@ -25,3 +25,9 @@ if __name__ == '__main__':
             print('Computing perimeter')
             return 2 * math.pi * self.radius
 
+    c = Circle(4.0)
+    print(c.radius)
+    print(c.area)
+    print(c.area)
+    print(c.perimeter)
+    print(c.perimeter)

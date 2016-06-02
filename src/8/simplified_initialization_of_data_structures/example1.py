@@ -20,6 +20,7 @@ if __name__ == '__main__':
     class Circle(Structure):
         _fields = ['radius']
         def area(self):
+            import math
             return math.pi * self.radius ** 2
 
 if __name__ == '__main__':
