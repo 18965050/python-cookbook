@@ -8,3 +8,9 @@ log.addHandler(logging.NullHandler())
 def func():
     log.critical("A Critical Error!")
     log.debug("A debug message")
+
+if __name__=="__main__":
+    # func()
+    import logging
+    logging.basicConfig()
+    func()

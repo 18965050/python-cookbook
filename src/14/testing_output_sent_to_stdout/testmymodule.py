@@ -1,7 +1,7 @@
 from io import StringIO
 from unittest import TestCase
 from unittest.mock import patch
-import mymodule
+import  mymodule
 
 class TestURLPrint(TestCase):
     def test_url_gets_to_stdout(self):
