@@ -6,3 +6,6 @@ b = ['x', 'y', 'z']
 for x in chain(a, b):
     print(x)
 
+for x in a+b:
+    print(x)
+
